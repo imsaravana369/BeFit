@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    tools:context=".Manual.ManualCheckActivity">
+
+    <ImageView
+        android:id="@+id/m_practise_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/practise_entry" />
+
+    <TextView
+        android:id="@+id/m_practise_set_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="No.of.Sets: 1"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/m_practise_img"
+        app:layout_constraintTop_toTopOf="@+id/m_practise_img" />
+
+    <TextView
+        android:id="@+id/m_practise_min_per_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Minues/Set: 0 "
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/m_practise_set_count"
+        app:layout_constraintTop_toBottomOf="@+id/m_practise_set_count" />
+
+    <TextView
+        android:id="@+id/m_practise_total_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Total Minues: 0"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/m_practise_min_per_set"
+        app:layout_constraintTop_toBottomOf="@+id/m_practise_min_per_set" />
+
+    <View
+        android:id="@+id/m_practise_view"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/m_practise_img"
+        app:layout_constraintTop_toBottomOf="@+id/m_practise_img" />
+
+    <Button
+        android:id="@+id/m_practise_startbtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/start_btn"
+        android:text="Start"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/m_practise_view"
+        app:layout_constraintStart_toStartOf="@+id/m_practise_view" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/m_practise_recyclerview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/m_practise_startbtn"
+        app:layout_constraintEnd_toEndOf="@id/m_practise_view"
+        app:layout_constraintStart_toStartOf="@id/m_practise_view"
+        app:layout_constraintTop_toBottomOf="@+id/m_practise_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

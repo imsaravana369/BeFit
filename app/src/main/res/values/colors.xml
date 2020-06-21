@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="font_color">#2699FB</color>
+    <color name="bar_color" >#552699FB</color>
+    <color name="selected_box_color">#92F296</color>
+    <color name="unselected_box_color">#ffffff</color>
+    <color name="top_grad">#CC55E1</color>
+    <color name="bottom_grad">#303030</color>
+
+
+</resources>

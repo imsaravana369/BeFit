@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="notification_id">100</integer>
+    <string name="notification_name">Exercise Alarm</string>
+    <string name="notication_description">Time to Exercise</string>
+    <string name="notification_title">Exercise Remainder</string>
+    <string name="notification_text">Time to Exercise</string>
+
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@android:color/transparent"
+    tools:context=".Fragment.ExerciseFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/fragment_exer_imgview"
+            android:layout_width="0dp"
+            android:layout_height="350dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_exer_oval" />
+
+        <TextView
+            android:id="@+id/fragment_exer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="Exercise  "
+            android:textColor="@android:color/white"
+            android:textSize="42sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/fragment_exer_oval"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/circle_counter"
+            android:backgroundTint="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/fragment_exer_name"
+            app:layout_constraintStart_toStartOf="@+id/fragment_exer_name"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_exer_name" />
+
+        <TextView
+            android:id="@+id/fragment_exer_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01:00"
+            android:textColor="@color/font_color"
+            android:textSize="52sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fragment_exer_oval"
+            app:layout_constraintEnd_toEndOf="@+id/fragment_exer_oval"
+            app:layout_constraintStart_toStartOf="@+id/fragment_exer_oval"
+            app:layout_constraintTop_toTopOf="@+id/fragment_exer_oval" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
